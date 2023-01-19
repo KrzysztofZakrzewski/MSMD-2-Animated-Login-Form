@@ -9,10 +9,112 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', serif;
-    min-height: 100vh;
-    background-color: #264464;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', serif;
+	min-height: 100vh;
+	background-color: #264464;
+}
+
+.container {
+	padding: 40px;
+	border-radius: 20px;
+	border: 5px solid #264464;
+	box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+		5px 5px 15px rgba(0, 0, 0, 0.4),
+		inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+		inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+
+	.form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 25px;
+
+		h2 {
+			color: aliceblue;
+			font-weight: 500;
+			letter-spacing: 0.1em;
+		}
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+		.inputBox {
+			position: relative;
+			width: 300px;
+
+			input {
+				padding: 12px 10px 12px 48px;
+				border: none;
+				width: 100%;
+				background-color: #264464;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				border-radius: 25px;
+				color: aliceblue;
+				font-weight: 300;
+				font-size: 1em;
+				box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+					5px 5px 15px rgba(0, 0, 0, 0.4);
+				// inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+				// inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+				transition: 0.7s;
+				outline: none;
+			}
+
+			span {
+				position: absolute;
+				left: 0;
+				padding: 12px 10px 12px 48px;
+				pointer-events: none;
+				font-size: 1em;
+				font-weight: 300;
+				transition: 0.5s;
+				letter-spacing: 0.05em;
+				color: rgba(255, 255, 255, 0.5);
+			}
+
+			input:valid ~ span,
+			input:focus ~ span {
+				color: #18c8b3;
+				border: 1px solid #18c8b3;
+				border-radius: 25px;
+				background: #264464;
+				transform: translateX(25px) translateY(-7px);
+				font-size: 0.6rem;
+				padding: 0 8px;
+				letter-spacing: 0.1em;
+			}
+
+			input:valid,
+			input:focus {
+				border: 1px solid #18c8b3;
+			}
+
+			i {
+				position: absolute;
+				top: 15px;
+				left: 16px;
+				width: 25px;
+				padding: 2px 0;
+				color: #18c8b3;
+				border-right: 1px solid #18c8b3;
+			}
+
+            input[type="submit"]{
+                background-color: #18c8b3;
+                color: #264464;
+                padding: 10px 0;
+                font-weight: 500;
+                cursor: pointer;
+                box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.4),
+                inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+            }
+		}
+	}
 }

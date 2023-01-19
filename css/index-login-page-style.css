@@ -22,4 +22,112 @@ body {
   min-height: 100vh;
   background-color: #264464;
 }
+
+.container {
+  padding: 40px;
+  border-radius: 20px;
+  border: 5px solid #264464;
+  -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.container .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.container .form h2 {
+  color: aliceblue;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.container .form p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container .form .inputBox {
+  position: relative;
+  width: 300px;
+}
+
+.container .form .inputBox input {
+  padding: 12px 10px 12px 48px;
+  border: none;
+  width: 100%;
+  background-color: #264464;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  color: aliceblue;
+  font-weight: 300;
+  font-size: 1em;
+  -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  outline: none;
+}
+
+.container .form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 12px 10px 12px 48px;
+  pointer-events: none;
+  font-size: 1em;
+  font-weight: 300;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container .form .inputBox input:valid ~ span,
+.container .form .inputBox input:focus ~ span {
+  color: #18c8b3;
+  border: 1px solid #18c8b3;
+  border-radius: 25px;
+  background: #264464;
+  -webkit-transform: translateX(25px) translateY(-7px);
+          transform: translateX(25px) translateY(-7px);
+  font-size: 0.6rem;
+  padding: 0 8px;
+  letter-spacing: 0.1em;
+}
+
+.container .form .inputBox input:valid,
+.container .form .inputBox input:focus {
+  border: 1px solid #18c8b3;
+}
+
+.container .form .inputBox i {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+  width: 25px;
+  padding: 2px 0;
+  color: #18c8b3;
+  border-right: 1px solid #18c8b3;
+}
+
+.container .form .inputBox input[type="submit"] {
+  background-color: #18c8b3;
+  color: #264464;
+  padding: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
 /*# sourceMappingURL=index-login-page-style.css.map */
