@@ -121,9 +121,14 @@ body {
 					inset 5px 5px 15px rgba(0, 0, 0, 0.4);
 			}
 		}
-
-		.singin {
-			display: none;
-		}
+	}
+	.singin {
+		display: none;
+	}
+	.singinForm {
+		display: flex;
+	}
+	.singUpclose {
+		display: none;
 	}
 }
