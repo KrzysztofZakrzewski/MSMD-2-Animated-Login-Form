@@ -17,3 +17,4 @@ https://www.youtube.com/watch?v=G58ZcfjSz0U
 
 I made JS code in dirent way. It was easier for me and (in my opinion (just opinion)) more efficient considering working with SASS.
 Only one function do the task, but we can use two function to be more precise.
+Some details in CSS are difrent.
